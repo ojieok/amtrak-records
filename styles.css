@@ -1,0 +1,219 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Blue Bar */
+.top-bar {
+    background: #00579C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+/* Search Bar */
+.search-container {
+    position: relative;
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 8px 35px 8px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: gray;
+}
+
+/* Top Navigation */
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-right:80px;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: gray;
+}
+
+/* Applications Icon */
+.applications {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.apps-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+/* Main Navigation */
+.main-nav {
+    background: #002147;
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: thin;
+}
+
+/* Thinner Dropdown Icon */
+.thin-dropdown {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent; /* Left side of the triangle */
+    border-right: 5px solid transparent; /* Right side of the triangle */
+    border-top: 5px solid white; /* This will make the triangle point downwards */
+    margin-left: 4px; /* Adds slight spacing from text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Records Retention Section */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #003366;
+}
+
+.departments h2, .more h2 {
+    color: #003366;
+}
+
+.search-bar2 {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    background-color: #003366;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.department-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.department-card {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.department-card:hover {
+    background-color: #002244;
+}
+
+.more {
+    margin-top: 40px;
+}
+
+.more-button {
+    background-color: #5eb3e4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.more-button:hover {
+    background-color: #4a9dc9;
+}
