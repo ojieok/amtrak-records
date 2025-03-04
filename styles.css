@@ -71,10 +71,11 @@
     align-items: center;
     gap: 5px;
 }
+.name{font-size:14px;}
 
 .profile img {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background: gray;
 }
@@ -83,7 +84,6 @@
 .applications {
     display: flex;
     align-items: center;
-    font-weight: bold;
     font-size: 14px;
 }
 
@@ -116,6 +116,7 @@
 /* Thinner Dropdown Icon */
 .thin-dropdown {
     display: inline-block;
+    font-size:12px;
     width: 0;
     height: 0;
     border-left: 5px solid transparent; /* Left side of the triangle */
@@ -139,9 +140,9 @@
 
 /* Records Retention Section */
 .container {
-    max-width: 1000px;
+    max-width: 100%;
     margin: 20px auto;
-    background-color: white;
+    background-color: rgb(241,241,241);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -152,7 +153,7 @@ h1 {
     color: #003366;
 }
 
-.departments h2, .more h2 {
+.departments h2{
     color: #003366;
 }
 
@@ -183,7 +184,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 15px;
+    margin:auto;
     margin-top: 20px;
+    width:75%;
 }
 
 .department-card {
@@ -198,6 +201,10 @@ h1 {
 
 .department-card:hover {
     background-color: #002244;
+}
+
+.more h2 {
+    color: #003366;
 }
 
 .more {
