@@ -203,7 +203,6 @@ h1 {
 }
 
 .department-card {
-    display: inline-block;
     background-color: #00579C;
     color: white;
     padding: 20px;
@@ -211,7 +210,6 @@ h1 {
     text-align: center;
     font-weight: bold;
     cursor: pointer;
-    
 }
 
 .department-card:hover {
@@ -239,4 +237,65 @@ h1 {
 
 .more-button:hover {
     background-color: #4a9dc9;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* search-bar2 positioning (IMPORTANT) */
+.search-bar2-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Dropdown positioning (IMPORTANT) */
+#search-results {
+    position: absolute;
+    top: 100%; /* Directly below the search bar */
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+/* Individual search result items */
+.search-result-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    text-align: left;
+}
+
+.search-result-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* search-bar2 */
+.search-bar2 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.search-bar2 input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar2 button {
+    padding: 10px;
+    border: none;
+    background-color: #003366;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }

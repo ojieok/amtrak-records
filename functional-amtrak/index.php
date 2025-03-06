@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Records Retention Schedule</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="search.js" defer></script> <!-- JavaScript for live search -->
 </head>
 <body>
 
@@ -14,17 +15,12 @@
             <img src="amtrak-logo.png" alt="Amtrak Logo">
             <span>All Aboard</span>
         </div>
-        
-        <div class="search-container">
-            <span class="search-icon">🔍</span>  <!-- Search icon now on the left -->
-            <input type="text" class="search-bar" placeholder="Search...">
-        </div>
 
         <nav class="top-nav">
             <a href="#">ALERTS & NOTIFICATIONS</a>
             <div class="profile">
                 <img src="user-icon.png" alt="User Icon">
-                <span class = 'name'>TESTUSER <span class="thin-dropdown"></span></span>
+                <span class='name'>TESTUSER <span class="thin-dropdown"></span></span>
             </div>
             <a href="#" class="applications">
                 <img src="apps-icon.png" alt="Apps Icon" class="apps-icon"> APPLICATIONS
@@ -47,19 +43,24 @@
     <!-- Records Retention Schedule Section -->
     <div class="container">
         <h1>RECORDS RETENTION SCHEDULE</h1>
-    
+
         <section class="departments">
             <div class="department-header">
                 <div class="department-text">
                     <h2>Departments</h2>
                     <p>View Records By Department</p>
                 </div>
-                <div class="search-bar2">
-                    <input type="text" placeholder="Search for a record">
-                    <button>🔍</button>
+
+                <!-- Search Bar 2 with Dropdown -->
+                <div class="search-bar2-container">
+                    <div class="search-bar2">
+                        <input type="text" id="search-bar" placeholder="Search for a record..." onkeyup="fetchSearchResults()">
+                        <button>🔍</button>
+                    </div>
+                    <div id="search-results" class="dropdown"></div> <!-- Dropdown results -->
                 </div>
             </div>
-            
+
             <div class="department-grid">
                 <a href="accounting.php" class="department-card">ACCOUNTING/<br>FINANCE</a>
                 <a href="audit.php" class="department-card">AUDIT</a>
@@ -75,9 +76,8 @@
                 <a href="purchases.php" class="department-card">PURCHASES AND MATERIALS</a>
                 <a href="risk.php" class="department-card">RISK MANAGEMENT/<br>SECURITY</a>
             </div>
-            
         </section>
-    
+
         <section class="more">
             <h2>More</h2>
             <button class="more-button">Submit Request</button>
@@ -85,4 +85,6 @@
             <button class="more-button">Guidelines</button>
         </section>
     </div>
-    
+
+</body>
+</html>

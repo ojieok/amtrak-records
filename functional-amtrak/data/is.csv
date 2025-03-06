@@ -1,0 +1,17 @@
+Record Code,Title,Description,Retention Period,Event
+IS100-1,System Usage Files,,1 Year,
+IS100-7,System Documentation/Source Code,"| Files 1 records I systems documentation relating to the creation, use, and maintenance of computer systems, application, or electronic records. Auto bill, Autogabs. Auto labor, unbilled, Management Reports Incorporated (MRI), Tenman, General Ledger and accounts receivable databases. 
+| D. Source Code. Includes, but not limited to, CETC software source code and operating system software application for all CETC systems. The information is used to prepare databases, run simulation, and perform railroad operations. It also includes operating system software used to generate CETC System Tandem operating system used by the CETC system. 
+| Data systems specifications, file specifications, codebooks, record layouts, user guides, output specifications, and final reports relating to a master file, database or other electronic records.",7 Years,Life of System
+IS101-7,Enterprise Architecture,| Records identifying the IT systems and networks required to perform Amtrak’s mission and the transitional processes required to implement comprehensive program to support that mission. Records include: - IT Standards and Architecture Patterns - Graphics models - Narratives that describe baseline architecture - Target architecture - Related sequencing plans,7 Years,
+IS102,Disaster Recovery Backups,"| Electronic copy of master of an electronic record or file retained in case the master file or database is damaged or inadvertently erased. 
+| Electronic copies active electronic mail system for disaster recovery purposes.",30 Days,
+IS103,"System Performance 
+| Test Files","Electronic files or records created solely to test system performance, as well as hard copy printouts and related documentation.",90 Days,
+IS104,Voicemail,Centralized system of managing telephone messages,1 day to 4 weeks,
+IS105-7,Audit Trails,,7 Years,
+IS106-1,Interface Logs,,1 Year,
+IS107,Input / Source Data,,90 Days,
+IS108,Intranet sites,,0 days,Page is superseded
+IS109-1,Service Desk Records,,1 year,Service is completed
+IS110-1,Error Logs,,1 year,
