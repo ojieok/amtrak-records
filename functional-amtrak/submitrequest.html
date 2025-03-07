@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Records Retention Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+    <style> 
+    /* internal CSS as to avoid adding to styles.css */
+    /* my MacBook already has XAMPP and styles.css, I'm not using GitHub just for this
+    minor addition.  If you want to add to styles.css, be my guest. */
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-container textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .form-container button {
+            margin-top: 10px;
+            padding: 10px;
+            background: #00579C;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background: #002244;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Blue Bar -->
+    <header class="top-bar">
+        <div class="logo">
+            <img src="amtrak-logo.png" alt="Amtrak Logo">
+            <span>All Aboard</span>
+        </div>
+
+        <nav class="top-nav">
+            <a href="#">ALERTS & NOTIFICATIONS</a>
+            <div class="profile">
+                <img src="user-icon.png" alt="User Icon">
+                <span class='name'>TESTUSER <span class="thin-dropdown"></span></span>
+            </div>
+            <a href="#" class="applications">
+                <img src="apps-icon.png" alt="Apps Icon" class="apps-icon"> APPLICATIONS
+            </a>
+        </nav>
+    </header>
+
+    <!-- Dark Blue Navigation -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="#">STAYING SAFE <span class="thin-dropdown"></span></a></li>
+            <li><a href="#">CAREER & BENEFITS <span class="thin-dropdown"></span></a></li>
+            <li><a href="#">RESOURCES <span class="thin-dropdown"></span></a></li>
+            <li><a href="#">ABOUT AMTRAK <span class="thin-dropdown"></span></a></li>
+            <li><a href="#">HELP <span class="thin-dropdown"></span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Records Retention Schedule Section -->
+    <div class="container">
+        <h1>RECORDS RETENTION SCHEDULE</h1>
+
+        <section class="departments">
+            <div class="department-header">
+                <div class="department-text">
+                    <h2>Request a Record</h2>
+                    <br>
+                    <p>Record Request Form for <br> Addition/Modification/Deletion</p>
+                </div>
+            </div>
+
+            <!-- Form; form action to be implemented -->
+            <div class="form-container">
+                <form action="" method="POST">
+                    <label for="record-code">Record Code</label><br>
+                    <input type="text" id="record-code" name="record-code" required><br><br>
+                    
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required><br><br>
+
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" required></textarea><br><br>
+
+                    <label for="retention">Retention Period</label>
+                    <input type="text" id="retention" name="retention" required><br><br>
+
+                    <label for="event">Event</label>
+                    <input type="text" id="event" name="event" required><br><br>
+
+                    <label for="event">Request Type</label>
+                    <input type="text" id="request_type" name="request_type" required><br><br>
+
+                    <button type="submit">Submit Record</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

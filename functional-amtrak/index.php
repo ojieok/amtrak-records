@@ -54,7 +54,7 @@
                 <!-- Search Bar 2 with Dropdown -->
                 <div class="search-bar2-container">
                     <div class="search-bar2">
-                        <input type="text" id="search-bar" placeholder="Search for a record..." onkeyup="fetchSearchResults()">
+                        <input type="text" id="search-bar" placeholder="Enter search (min. 3 chars.)" onkeyup="fetchSearchResults()">
                         <button>🔍</button>
                     </div>
                     <div id="search-results" class="dropdown"></div> <!-- Dropdown results -->
@@ -80,9 +80,10 @@
 
         <section class="more">
             <h2>More</h2>
-            <button class="more-button">Submit Request</button>
-            <button class="more-button">Add Record</button>
-            <button class="more-button">Guidelines</button>
+            <a href="submitrequest.html"><button class="more-button">Submit Request</button></a>
+            <button class="more-button">Record Portal</button> 
+            <!-- Record Portal button to be implemented on back-end -->
+            <a href="guidelines.html"><button class="more-button">Guidelines</button></a>
         </section>
     </div>
 
