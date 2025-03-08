@@ -1,4 +1,4 @@
-# Amtrak Design Challenge
+# UMD Info Challenge 2025: Amtrak Records Retention Schedule Design
 A web-based solution providing a modernized digital approach to records retention at Amtrak
 
 ## Task
